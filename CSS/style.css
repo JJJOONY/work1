@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/*=============header  part CSS===============*/
+.logo {
+    float: left;
+    width: 240px;
+}
+
+.logo img {
+    padding-top: 31px;
+}
+
+.menu {
+    float: left;
+    width: 900px;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+
+}
+
+.menu ul li a {
+    padding: 0 25px;
+    line-height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    color: #222;
+    font-weight: 400;
+    transition: all linear.3s;
+
+}
+
+.menu ul li a:hover {
+    color: #15a4fa;
+}
+
+/*=============banner  part CSS===============*/
+.banner-bg {
+
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 218px;
+    padding-bottom: 90px;
+
+
+}
+
+.banner-text {
+    text-align: center;
+
+}
+
+.banner-text h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 120px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 49px;
+    position: relative;
+}
+
+.banner-text h1:after {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 2px;
+    background: #15a4fa;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+}
+
+.banner-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 79px;
+}
+
+.banner-text a {
+    border: 1px solid #15a4fa;
+    padding: 21px 35px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    transition: all linear.3s;
+}
+
+.banner-text a:hover {
+    background: #15a4fa;
+}
+
+.banner-text h4 {
+    font-size: 40px;
+    padding-top: 198px;
+    color: #fff;
+}
+
+/*=============simple  part CSS===============*/
+.simple-text {
+    text-align: center;
+}
+
+.simple-bg {
+    background: #f6f9f9;
+    padding-top: 80px;
+    padding-bottom: 110px;
+
+}
+
+.simple-text h2 {
+    color: #2d3950;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.simple-text p {
+    color: #999999;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 22px;
+    line-height: 32px;
+    padding: 0 15px;
+}
+
+/*=============service  part CSS===============*/
+.service-main {
+    padding: 65px 0;
+
+}
+
+.service-item {
+    width: 380px;
+    text-align: center;
+    float: left;
+}
+
+.icon-main {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.icon-left {
+    width: 50px;
+    height: 100px;
+    background: #48baff;
+    float: left;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.icon-right {
+    width: 50px;
+    height: 100px;
+    background: #5fc3ff;
+    float: left;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.service-main i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #2d3950;
+    padding-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 20px;
+
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+    padding: 0 40px;
+    line-height: 22px;
+}
+
+/*=============work  part CSS===============*/
+.work-bg {
+    background: #f6f9f9;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+}
+
+.work-head {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.work-head h2 {
+    font-size: 41px;
+    font-family: 'Lato', sans-serif;
+    color: #2d3950;
+    padding-bottom: 20px;
+}
+
+.work-head p {
+    color: #909090;
+    font-size: 20px;
+}
+
+.work-main {}
+
+.work-item {
+    width: 360px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.work-item img{
+   
+    
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    
+    transition: all linear .3s;
+    transform: scale(0);
+}
+
+.overlay i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    margin: 0 4px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+
+}
+
+.work-item:hover .overlay {
+ 
+    transform: scale(1);
+}
+
+.mr {
+    margin-right: 0;
+}
+
+/*=============footer  part CSS===============*/
+
+.footer-bg {
+    background: url(../images/footer-bg.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 76px;
+    padding-bottom: 96px;
+}
+
+.footer-head {
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding-top: 70px;
+}
+
+.footer-head h2 {
+    color: #fff;
+    font-size: 41px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-head p {
+    color: #999999;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 53px;
+}
+
+.footer-bg:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 55, 76, 0.58);
+    top: 0;
+    left: 0;
+}
+
+.footer-main {
+    position: relative;
+    z-index: 9999;
+}
+
+.form {
+    width: 555px;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 555px;
+    background: transparent;
+    padding: 25px 0;
+    padding-left: 38px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #999;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form textarea {
+    width: 555px;
+    background: transparent;
+    padding-top: 25px;
+    padding-bottom: 118px;
+    resize: none;
+    padding-left: 38px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #999;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form button {
+    background: transparent;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: right;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+
+}
+
+.left p {
+    color: #999999;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.bottom {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.right i {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: #15a4fa;
+    color: #fff;
+    line-height: 40px;
+}
+
+/*======back to top button*/
+.back-to-top {
+
+    right: 20px;
+    bottom: 50px;
+    z-index: 999;
+    position: fixed;
+
+}
+
+.back-to-top i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: red;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/*========menu fixed=========*/
+.menu-main {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+    transition: all linear .3s;
+
+}
+
+.bg {
+    background: #fff;
+    animation: menu 1s;
+
+}
+
+@keyframes menu {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
